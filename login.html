@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login page</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    .container{
+        border: 2px solid black;
+        width: 500px;
+        height: 500px;
+        margin: 50px;
+        margin-top: 140px;
+        background-color: rgba(255, 255, 255,0.2);
+    }
+    .container-ele{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    #ph,#pass,#for,#butt{
+        margin: 20px;
+        width: 296px;
+        height: 20px;
+        margin-left: 93px;
+    }
+    #for{
+        text-decoration: none;
+        color: black;
+        font-size: large;
+        font-weight: 900;
+    }
+    #ph,#pass{
+        text-align: left;
+        font-size: large;
+        font-weight: 600;
+        color: black;
+        background-color: rgb(255, 251, 251);
+        border-radius: 4px;
+        border: 1px solid transparent;
+    }
+    .body{
+        background-image: url("login\ bg.jpg");
+        /* width: max-content;
+        height: max-content; */
+        height: 100dvh;
+        background-position: center;
+        background-size: cover;
+    }
+    #butt{
+        background-color: transparent;
+        font-size: larger;
+        height: 30px;
+        width: 120px;
+        border-radius: 5px;
+        margin-left: 179px;
+        font-weight: 900;
+    }
+    #butt:hover{
+        background-color: azure;
+    }
+    #for:hover{
+        color: azure;
+    }
+    #logo{
+        width: 60px;
+    height: 62px;
+    border: 2px solid white;
+    margin: 19px;
+    margin-left: -50px;
+    border-radius: 20px;
+    }
+</style>
+<body class="body">
+    <center>
+    <div class="container">
+        <h1>Login Page</h1>
+        <center>
+        <div class="container-ele">
+            <input type="tel" name="phnimber" id="ph" placeholder="Enter Phone number">
+            <br>
+            <input type="password" name="pass" id="pass" placeholder="Enter password">
+            <a href="#" id="for">Forgot Password ?</a>
+            <button id="butt" onclick="close()">Login</button>
+        </center>
+        </div>
+    </div>
+</center>
+<script>
+    function close(){
+        msg = "Are you sure you want to login?";
+        if(confirm("Are yo u sure?"))
+        location.href = 'index.html';
+    }
+</script>
+</body>
+</html>

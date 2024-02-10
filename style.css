@@ -4,6 +4,9 @@ padding: 0;
 font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 text-decoration: none;
 }
+body{
+    background-color: #000000;
+}
 .head{
     background-color: rgb(0, 0, 0);
     color: #ffff;
@@ -33,7 +36,7 @@ text-decoration: none;
     justify-content: space-evenly;
     font-weight: 900;
     background-color: rgba(246, 239, 239,0.8);
-    position: static;
+
 }
 #ele{
     color: #1f1f1f;
@@ -130,6 +133,7 @@ text-decoration: none;
 #hi{
     margin: 226px;
     padding: 72px;
+    font-weight: 500;
 }
 #hi:active{
     color: #A07B71;
@@ -206,9 +210,10 @@ footer ul{
     padding-top: 50px;
 
 }
-/* footer ul li{
-    m
-} */
+footer ul:hover{
+    border: 2px solid white;
+}
+
 footer h3{
     color: white;
     text-decoration:double;
@@ -311,3 +316,42 @@ footer h3{
     display: grid;
     place-content: center;
 }
+
+.faq-tab{
+    display: grid;
+    place-content: center;
+    background-color: #000000;
+    margin-top: -10px;
+    color: #fffdfd;
+}
+.accordion-item{
+    width: 80dvw;
+    
+   
+}
+.faq-container{
+    display: grid;
+    place-content: center;
+    background-color: #000000;
+}
+
+
+.accordion-button{
+    background-color: #76420c;
+}
+#ca{
+    background-color: #6f4e37;
+    color: #ffffff;
+}
+#ca:active{
+    border: none;
+}
+.main-faq{
+    background-color: #000000;
+    height: 378px;
+}
+.nothi{
+    width: 20px;
+    background-color: #ffffff;
+}
+
